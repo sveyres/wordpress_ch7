@@ -1,0 +1,15 @@
+
+@mixin buttonc ($border, $back) {
+    color : white;
+    background-color: $back;
+    padding: 0.8em 1em;
+    border-radius: 5px;
+    border : 1px solid $border;
+}
+
+@mixin buttont ($border) {
+    color : white;
+    padding: 1em 1.5em;
+    border-radius: 5px;
+    border : 1px solid $border;
+}

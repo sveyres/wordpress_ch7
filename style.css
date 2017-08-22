@@ -1,0 +1,265 @@
+/*
+Theme Name: ch7_miesis
+Theme URI: https://wordpress.org/themes/twentyfifteen/
+Author: miesis
+Description: ma desc.
+Version: 1.0
+
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0); }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0); }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0); } }
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  background-color: #F6F6F6; }
+  body h1, body h2 {
+    font-family: "Arvo", serif; }
+  body li {
+    list-style: none; }
+  body ul {
+    padding-left: 0; }
+  body header {
+    background: white url(static/img/intro5.jpg) no-repeat center bottom;
+    background-size: 100% auto;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center; }
+    body header img {
+      align-self: end;
+      margin-bottom: 1em; }
+    body header h1 {
+      margin: 0;
+      font-size: 5em;
+      font-weight: lighter; }
+    body header p {
+      font-size: 2em; }
+    body header .button01 {
+      color: white;
+      padding: 1em 1.5em;
+      border-radius: 5px;
+      border: 1px solid #3498db;
+      background-color: #3498db; }
+    body header .button01:hover {
+      color: white;
+      padding: 1em 1.5em;
+      border-radius: 5px;
+      border: 1px solid white;
+      background: none; }
+    body header .button02 {
+      color: white;
+      padding: 1em 1.5em;
+      border-radius: 5px;
+      border: 1px solid white;
+      background: none; }
+  body main .buttonv {
+    color: white;
+    background-color: #1ABC9C;
+    padding: 0.8em 1em;
+    border-radius: 5px;
+    border: 1px solid #1ABC9C; }
+  body main .buttonb {
+    color: white;
+    background-color: #3498db;
+    padding: 0.8em 1em;
+    border-radius: 5px;
+    border: 1px solid #3498db; }
+  body main nav {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto; }
+    body main nav h2, body main nav ul {
+      margin: 0;
+      padding: 0.5em 1em; }
+    body main nav h2:hover {
+      animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+      transform: translate3d(0, 0, 0);
+      backface-visibility: hidden;
+      perspective: 1000px;
+      color: #1ABC9C; }
+    body main nav a {
+      color: #34495e; }
+    body main nav a:hover {
+      color: #1ABC9C; }
+    body main nav li {
+      padding: 0.5em 1em;
+      display: inline-block;
+      text-decoration: none; }
+  body main section {
+    padding: 4em;
+    color: #34495e; }
+    body main section .container {
+      width: 60%;
+      margin: auto; }
+    body main section .title {
+      padding: 2em;
+      text-align: center; }
+      body main section .title h3 {
+        font-size: 4em;
+        margin: 0;
+        padding: 0; }
+      body main section .title p {
+        margin: 0; }
+    body main section h4 {
+      font-size: 2em;
+      margin: 1em 0; }
+    body main section .whatis {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1em; }
+      body main section .whatis article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center; }
+        body main section .whatis article img:hover {
+          animation: spin 0.5s ease-out; }
+        body main section .whatis article p {
+          line-height: 1.46428571;
+          font-weight: 300;
+          margin-top: 0; }
+    body main section .article {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-gap: 1em; }
+      body main section .article img {
+        width: 100%; }
+      body main section .article p, body main section .article ul {
+        color: #34495e;
+        font-size: 1.2em;
+        line-height: 1.4;
+        font-weight: 300; }
+      body main section .article p:nth-child(3) {
+        font-size: 1em;
+        color: #8D8D8D; }
+      body main section .article li {
+        padding: 0.4em; }
+    body main section .credits {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1em; }
+      body main section .credits article {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        justify-items: center;
+        align-items: center; }
+        body main section .credits article i {
+          background-color: #f0f1ec;
+          border-radius: 50%;
+          padding: 0.5em;
+          font-size: 4em; }
+        body main section .credits article i:hover {
+          animation: spin 0.5s ease-out;
+          background-color: #1ABC9C;
+          color: white; }
+  body main section:nth-child(2n+1) {
+    background-color: #ECEEF0; }
+  body main section:nth-child(1) {
+    padding: 0; }
+  body main section:nth-child(7) {
+    color: white;
+    background-color: #34495e; }
+    body main section:nth-child(7) button {
+      border-radius: 0;
+      font-size: 0.8em;
+      font-weight: bold;
+      padding: 1em 5em;
+      margin-top: 4em; }
+  body main .download {
+    background: white url(../img/banner-bg.jpg) no-repeat center center;
+    background-size: 100% auto;
+    color: white; }
+  body main .contactus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3em; }
+    body main .contactus form {
+      display: grid;
+      grid-template-columns: 1fr; }
+      body main .contactus form input, body main .contactus form textarea {
+        border: 2px solid #bdc3c7;
+        color: #34495e;
+        line-height: 1.467;
+        padding: 0.5em;
+        border-radius: 6px;
+        margin-bottom: 1em; }
+      body main .contactus form button {
+        justify-self: end; }
+    body main .contactus li {
+      font-size: 1.5em;
+      display: inline-block; }
+  body main .cursor:hover {
+    cursor: url(../img/cross.png) 25 25, auto; }
+  body main .two {
+    margin-top: 4em; }
+  body footer {
+    padding: 0 4em;
+    background-color: #ECEEF0;
+    color: #8D8D8D; }
+    body footer section {
+      width: 60%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1em; }
+      body footer section h3 {
+        font-weight: bold; }
+      body footer section div {
+        padding: 1em; }
+      body footer section a {
+        color: #9aa4af;
+        text-decoration: none;
+        font-weight: bold; }
+      body footer section a:hover {
+        color: #34495e; }
+      body footer section div:nth-child(2) {
+        background-color: #34495e;
+        color: white; }
+        body footer section div:nth-child(2) a {
+          color: white; }
+      body footer section ul {
+        font-weight: bold;
+        line-height: 2; }
+
+@media screen and (max-width: 768px) {
+  body main nav {
+    flex-direction: column;
+    width: 100%; }
+    body main nav li {
+      padding: 0.5em 1em;
+      display: block; }
+  body main section div {
+    width: 100%; }
+  body main section .whatis {
+    display: grid;
+    grid-template-columns: 1fr; }
+  body main section .article {
+    display: block; }
+    body main section .article img {
+      width: 80%; }
+  body main section .credits {
+    display: grid;
+    grid-template-columns: 1fr; } }
+
+/*# sourceMappingURL=style.css.map */
