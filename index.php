@@ -17,8 +17,6 @@
         </header>
         <main>
             <section>
-
-
                 <nav>
                     <h2><?php bloginfo( 'name' ); ?></h2>
                     <?php
@@ -30,18 +28,16 @@
                 </nav>
             </section>
 
-
             <section id="whatis">
-
                     <?php
                         get_template_part( 'template-parts/content_loop_whatis');
                     ?>
-
             </section>
 
                     <?php
                         get_template_part( 'template-parts/content_loop_useit');
                     ?>
+
 
             <section id="screenshot">
                 <div class="container title">
@@ -49,16 +45,12 @@
                     <p>A special thanks to Death.</p>
                     <div class="owl-carousel two owl-theme">
                         <div class="owl-carousel two owl-theme">
-
                         </div>
-
-
                 </div>
                 <div class="container">
                     <img class="cursor" src="" alt="">
                 </div>
             </section>
-
 
             <section class ="update">
                 <div class="container title">
@@ -74,8 +66,6 @@
 
                 ?>
             </section>
-            
-
 
             <section class ="download">
                 <div class="container title">
@@ -83,7 +73,6 @@
                     <button class="buttonv" type="button" name="button">Pay with a tweet</button>
                 </div>
             </section>
-
 
             <section id="contact">
                 <div class="container title">
@@ -117,7 +106,6 @@
                     </div>
                 </div>
             </section>
-
 
         </main>
 

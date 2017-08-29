@@ -10,8 +10,6 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-
-
 @import "base";
 @import "buttons";
 *{
@@ -29,6 +27,7 @@ body {
         list-style: none;
     }
     ul {
+        margin : 0;
         padding-left: 0;
     }
     header {
@@ -75,10 +74,10 @@ body {
             @include buttonc ($colorbutton2, $colorbutton2);
         }
         nav {
-            display: flex;
-            justify-content: space-between;
             width: $width;
             margin: auto;
+            display: flex;
+            justify-content: space-between;
             h2, ul {
                 margin: 0;
                 padding: 0.5em 1em;
@@ -96,13 +95,11 @@ body {
             a:hover {
                 color : $colorbutton1;
             }
-
             li {
                 padding:0.5em 1em;
                 display: inline-block;
                 text-decoration: none;
             }
-
         }
         section {
             padding: 4em;
@@ -113,9 +110,9 @@ body {
             }
             .title {
                 h3 {
-                    font-size: 4em;
                     margin: 0;
                     padding: 0;
+                    font-size: 4em;
                 }
                 p {
                     margin: 0;
@@ -124,14 +121,10 @@ body {
                 text-align: center;
             }
             h4 {
-                font-size: 2em;
                 margin: 1em 0;
+                font-size: 2em;
             }
-
             .whatis {
-                ul {
-                    margin: 0;
-                }
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 grid-gap: 1em;
@@ -159,19 +152,16 @@ body {
                     width: 100%;
                     height: auto;
                 }
-
-                p, ul{
+                p, ul {
                     color :  $font-color-dark;
                     font-size: 1.2em;
                     line-height: 1.4;
                     font-weight: 300;
-
                 }
-                p:nth-child(3){
+                p:nth-child(3) {
                     font-size:1em;
                     color :  $font-color-light;
                 }
-
                 li {
                     padding: 0.4em;
                 }
@@ -199,6 +189,11 @@ body {
                 }
             }
         }
+        #useit:nth-of-type(2n){
+            .desc {
+                order: 2;
+            }
+        }
         section:nth-child(2n+1){
             background-color: $background-color02;
         }
@@ -209,11 +204,11 @@ body {
             color : white;
             background-color: $background-color-dark;
             button {
+                margin-top: 4em;
+                padding: 1em 5em;
                 border-radius: 0;
                 font-size: 0.8em;
                 font-weight: bold;
-                padding: 1em 5em;
-                margin-top: 4em;
             }
         }
         .download {
@@ -224,21 +219,17 @@ body {
         .contactus {
             display: grid;
             grid-template-columns: 1fr 1fr;
-
             grid-gap: 3em;
             form {
                 display: grid;
                 grid-template-columns: 1fr;
-                label {
-
-                }
                 input, textarea {
+                    margin-bottom: 1em;
+                    padding: 0.5em;
                     border: 2px solid #bdc3c7;
+                    border-radius: 6px;
                     color: $font-color-dark;
                     line-height: 1.467;
-                    padding: 0.5em;
-                    border-radius: 6px;
-                    margin-bottom: 1em;
                 }
                 button {
                     justify-self: end;
@@ -247,10 +238,8 @@ body {
             li {
                 font-size: 1.5em;
                 display: inline-block;
-
             }
         }
-
         .cursor:hover {
             cursor: url(../img/cross.png) 25 25, auto;
         }
@@ -289,7 +278,6 @@ body {
                 a {
                     color : white;
                 }
-
             }
             ul {
                 font-weight: bold;
