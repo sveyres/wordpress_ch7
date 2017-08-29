@@ -13,3 +13,19 @@
     border-radius: 5px;
     border : 1px solid $border;
 }
+
+
+@mixin buttonctel ($border, $back) {
+    color : white;
+    background-color: $back;
+    padding: 0.8em 1em;
+    border-radius: 5px;
+    border : 1px solid $border;
+}
+
+@mixin buttonttel ($border) {
+    color : white;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    border : 1px solid $border;
+}

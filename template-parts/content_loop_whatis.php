@@ -1,4 +1,10 @@
-
+<?php
+$args = array(
+       'posts_per_page'   => 6,
+       'category_id'    => 3,
+       'order' => 'ASC',
+);
+$posts = get_posts($args); ?>
 
 <div class="container title">
     <h3><?php echo get_cat_name(3) ?></h3>

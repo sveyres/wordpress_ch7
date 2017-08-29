@@ -1,4 +1,9 @@
-
+<?php $args = array(
+       'posts_per_page'   => 6,
+       'category_name'    => 'useit',
+       'order' => 'ASC',
+);
+$posts = get_posts($args); ?>
 
 
 
@@ -12,7 +17,7 @@
     <article class="article">
         <div>
             <h4><?php the_title(); ?></h4>
-            
+
             <?php the_content(); ?>
             <button class="buttonv" type="button" name="button">View Details</button>
             <button class="buttonb" type="button" name="button">View Website</button>

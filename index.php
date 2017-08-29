@@ -34,35 +34,14 @@
             <section id="whatis">
 
                     <?php
-                        $args = array(
-                               'posts_per_page'   => 6,
-                               'category_id'    => 3,
-                               'order' => 'ASC',
-                        );
-                        $posts = get_posts($args);
                         get_template_part( 'template-parts/content_loop_whatis');
                     ?>
 
             </section>
 
                     <?php
-                        $args = array(
-                               'posts_per_page'   => 6,
-                               'category_name'    => 'useit',
-                               'order' => 'ASC',
-                        );
-                        $posts = get_posts($args);
                         get_template_part( 'template-parts/content_loop_useit');
                     ?>
-
-
-
-
-
-
-
-
-
 
             <section id="screenshot">
                 <div class="container title">
@@ -70,7 +49,7 @@
                     <p>A special thanks to Death.</p>
                     <div class="owl-carousel two owl-theme">
                         <div class="owl-carousel two owl-theme">
-                            
+
                         </div>
 
 
@@ -89,43 +68,13 @@
                 </div>
             </section>
 
-
             <section id="credits">
-                <div class="container title">
-                    <h3>Credits</h3>
-                    <p>A special thanks to Death.</p>
-                </div>
-                <div class="container credits">
-                    <article class="">
-                        <i class="fa fa-desktop" aria-hidden="true"></i>
-                        <div class="">
-                            <h4>Bootstrap</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-                        </div>
-                    </article>
-                    <article class="">
-                        <i class="fa fa-picture-o" aria-hidden="true"></i>
-                        <div class="">
-                            <h4>Owl-Carrousel</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-                        </div>
-                    </article>
-                    <article class="">
-                        <i class="fa fa-magic" aria-hidden="true"></i>
-                        <div class="">
-                            <h4>Codrops</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-                        </div>
-                    </article>
-                    <article class="">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                        <div class="">
-                            <h4>Lorem Ipsum</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-                        </div>
-                    </article>
-                </div>
+                <?php
+                get_template_part( 'template-parts/content_loop_credits');
+
+                ?>
             </section>
+            
 
 
             <section class ="download">
