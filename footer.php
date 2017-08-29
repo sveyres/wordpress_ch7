@@ -27,7 +27,7 @@
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"></script>
 
-<script src="<?php echo get_stylesheet_directory_uri().'/static/static/js/OwlCarousel2-2.2.1/dist/owl.carousel.min.js'; ?>"></script>
+<script src=" <?php echo get_stylesheet_directory_uri().'/static/js/OwlCarousel2-2.2.1/dist/owl.carousel.min.js'; ?> "></script>
 
 <script type="text/javascript">
 $(document).ready(function(){

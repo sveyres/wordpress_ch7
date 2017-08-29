@@ -36,7 +36,7 @@
                     <?php
                         $args = array(
                                'posts_per_page'   => 6,
-                               'category_name'    => 'whatis',
+                               'category_id'    => 3,
                                'order' => 'ASC',
                         );
                         $posts = get_posts($args);
@@ -69,13 +69,11 @@
                     <h3>Screen App</h3>
                     <p>A special thanks to Death.</p>
                     <div class="owl-carousel two owl-theme">
-                        <div class="item"><img class="cursor" src="static/img/slide/1.png" alt=""></div>
-                        <div class="item"><img class="cursor" src="static/img/slide/2.png" alt=""></div>
-                        <div class="item"><img class="cursor" src="static/img/slide/3.png" alt=""></div>
-                        <div class="item"><img class="cursor" src="static/img/slide/1.png" alt=""></div>
-                        <div class="item"><img class="cursor" src="static/img/slide/2.png" alt=""></div>
-                        <div class="item"><img class="cursor" src="static/img/slide/3.png" alt=""></div>
-                    </div>
+                        <div class="owl-carousel two owl-theme">
+                            
+                        </div>
+
+
                 </div>
                 <div class="container">
                     <img class="cursor" src="" alt="">

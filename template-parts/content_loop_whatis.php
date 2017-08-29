@@ -1,14 +1,14 @@
 
+
 <div class="container title">
-    <h3><?php foreach (get_the_category() as $category){
-            echo $category->cat_name;
-        }; ?></h3>
-    <p><?php echo category_description(); ?></p>
+    <h3><?php echo get_cat_name(3) ?></h3>
+    <p><?php echo category_description(3); ?></p>
 </div>
 <div class="container whatis">
 
 <?php
 foreach ($posts as $post) {
+
     setup_postdata( $post );
     $tags = wp_get_post_tags($post->ID);
     ?>

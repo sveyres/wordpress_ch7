@@ -191,7 +191,7 @@ body {
       padding: 1em 5em;
       margin-top: 4em; }
   body main .download {
-    background: white url(../img/banner-bg.jpg) no-repeat center center;
+    background: white url(static/img/banner-bg.jpg) no-repeat center center;
     background-size: 100% auto;
     color: white; }
   body main .contactus {
