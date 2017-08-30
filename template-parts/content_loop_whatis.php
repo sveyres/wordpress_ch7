@@ -17,16 +17,15 @@
     foreach ($posts as $post) {
         setup_postdata( $post );
         $tags = wp_get_post_tags($post->ID);
-?>
+        ?>
+        <article class="">
+            <?php the_post_thumbnail(); ?>
+            <h4><?php the_title(); ?></h4>
+            <?php the_content(); ?>
+        </article>
 
-    <article class="">
-        <?php the_post_thumbnail(); ?>
-        <h4><?php the_title(); ?></h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    </article>
-
-<?php
-    };
+        <?php
+    }
 ?>
 
 </div>

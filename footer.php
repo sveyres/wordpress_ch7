@@ -23,50 +23,51 @@
 
 </footer>
 <script
-     src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous"></script>
-
-<script src=" <?php echo get_stylesheet_directory_uri().'/static/js/OwlCarousel2-2.2.1/dist/owl.carousel.min.js'; ?> "></script>
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+<script src=" <?php echo get_stylesheet_directory_uri().'/static/js/OwlCarousel2-2.2.1/dist/owl.carousel.min.js'; ?> ">
+</script>
 
 <script type="text/javascript">
-$(document).ready(function(){
-    if ($(this).parents('.last').length) {
-    }
-    $('.one').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:1
-            },
-            1000:{
-                items:1
-            }
+    $(document).ready(function(){
+        if ($(this).parents('.last').length) {
         }
-    })
-    $('.two').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:2
-            },
-            1000:{
-                items:3
+        $('.one').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:false,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
             }
-        }
-    })
+        })
+        $('.two').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:false,
+            dots:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:3
+                }
+            }
+        })
 
-});
+    });
 </script>
 </body>
 </html>

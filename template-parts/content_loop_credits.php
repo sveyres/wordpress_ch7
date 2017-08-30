@@ -17,7 +17,7 @@
     foreach ($posts as $post) {
         setup_postdata( $post );
         $tags = wp_get_post_tags($post->ID);
-?>
+        ?>
         <article class="">
             <i class="fa fa-<?php echo get_post_meta($post->ID, 'fa_icon', true) ?>" aria-hidden="true"></i>
             <div class="">
@@ -25,7 +25,7 @@
                 <p><?php the_content(); ?></p>
             </div>
         </article>
-<?php
-    };
+        <?php
+    }
 ?>
 </div>
